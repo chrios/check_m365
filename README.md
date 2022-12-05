@@ -1,7 +1,8 @@
 # check_m365.py
 
 ## Usage
-```usage: check_m365.py [-h] -H TENANTDOMAIN -c CLIENTID -cs CLIENTSECRET [-cli] -t TENANTID -s SERVICES
+```
+usage: check_m365.py [-h] -H TENANTDOMAIN -c CLIENTID -cs CLIENTSECRET [-cli] -t TENANTID -s SERVICES
 
 options:
   -h, --help            show this help message and exit
@@ -16,7 +17,8 @@ options:
   -t TENANTID, --TenantID TENANTID
                         Tenant ID (Directory ID)
   -s SERVICES, --Services SERVICES
-                        Service list (comma separated). If empty, checks all services```
+                        Service list (comma separated). If empty, checks all services
+```
 
 This plugin is designed to be used with Nagios.
 
