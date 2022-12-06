@@ -1,5 +1,6 @@
 import requests
 import argparse
+import sys
 
 valid_services = {
     'Exchange': 'Exchange Online',
@@ -102,5 +103,7 @@ for api_service in api_services:
 # construct return message
 if len(degraded_services) > 0:
     print(f'WARNING: Found degraded services {degraded_services}')
+    sys.exit(1)
 else:
     print('OK: All services operational')
+    sys.exit(0)
